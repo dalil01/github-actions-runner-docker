@@ -9,6 +9,9 @@ RUN apt-get update -y \
         gnupg-agent \
         software-properties-common
 
+RUN curl -fsSL https://get.docker.com -o get-docker.sh \
+    && sh get-docker.sh
+
 WORKDIR /actions-runner
 
 ARG ARCH=x64
