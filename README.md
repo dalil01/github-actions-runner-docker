@@ -23,7 +23,7 @@ Replace `<arch>` with the desired architecture (e.g., `amd64`, `arm64`) and `<ve
 To run the GitHub Actions runner in a Docker container, use the following command:
 
 ```
-docker run -d --restart always --rm --name <container-name> -e RUNNER_NAME=<RUNNER_NAME> -e REPOSITORY_URL=<REPOSITORY_URL> -e TOKEN=<TOKEN> -e RUNNER_ALLOW_RUNASROOT="1" -v /var/run/docker.sock:/var/run/docker.sock dalil01/github-actions-runner:1.0.0-<arch>
+docker run -d --restart always --name <container-name> -e RUNNER_NAME=<RUNNER_NAME> -e REPOSITORY_URL=<REPOSITORY_URL> -e TOKEN=<TOKEN> -e RUNNER_ALLOW_RUNASROOT="1" -v /var/run/docker.sock:/var/run/docker.sock dalil01/github-actions-runner:1.0.0-<arch>
 ```
 
 Replace `<container-name>`, `<RUNNER_NAME>`, `<REPOSITORY_URL>`, `<TOKEN>`, and `<arch>` with your desired values.
