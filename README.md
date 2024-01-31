@@ -31,3 +31,7 @@ Replace `<container-name>`, `<RUNNER_NAME>`, `<REPOSITORY_URL>`, `<TOKEN>`, and 
 ## Resources
 
 Find the newest runner version and additional documentation: https://github.com/actions/runner/
+
+## Contribution
+
+Want to improve this project? Feel free to open pull requests and create issues.
