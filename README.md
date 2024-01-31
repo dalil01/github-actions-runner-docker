@@ -15,7 +15,7 @@ docker build -t dalil01/github-actions-runner:1.0.0-<arch> --build-arg ARCH=<arc
 ## Run
 
 ```
-docker run -d --name <container-name> -e REPOSITORY_URL=<REPOSITORY_URL> -e TOKEN=<TOKEN> -e RUNNER_ALLOW_RUNASROOT="1" -v /var/run/docker.sock:/var/run/docker.sock dalil01/github-actions-runner:1.0.0-<arch>
+docker run -d --rm --name <container-name> -e RUNNER_NAME=<RUNNER_NAME> -e REPOSITORY_URL=<REPOSITORY_URL> -e TOKEN=<TOKEN> -e RUNNER_ALLOW_RUNASROOT="1" -v /var/run/docker.sock:/var/run/docker.sock dalil01/github-actions-runner:1.0.0-<arch>
 ```
 
 ## Resources
