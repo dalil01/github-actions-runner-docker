@@ -13,7 +13,7 @@ Find the Docker image on Docker Hub: https://hub.docker.com/repository/docker/da
 To build the Docker image, use the following command:
 
 ```
-docker build -t dalil01/github-actions-runner:1.0.0-<arch> --build-arg ARCH=<arch> --build-arg RUNNER_VERSION=<version> .
+docker build -t github-actions-runner:1.0.0-<arch> --build-arg ARCH=<arch> --build-arg RUNNER_VERSION=<version> .
 ```
 
 Replace `<arch>` with the desired architecture (e.g., `amd64`, `arm64`) and `<version>` with the GitHub Actions runner version.
